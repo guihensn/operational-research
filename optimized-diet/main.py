@@ -8,14 +8,14 @@ if __name__ == '__main__':
     alimentos = FabricaAlimentos.lista
 
     #Exemplo 1
-    guilherme = Pessoa(nome= "Guilherme", idade=23, altura=1.73, peso=60, sexo="Masculino", atividade="Moderada")
+    guilherme = Pessoa(nome= "João", idade=23, altura=1.73, peso=60, sexo="Masculino", atividade="Moderada")
     DietaGuilherme = Dieta( pessoa = guilherme, tolerancia=0.15, alimentos = alimentos)
 
     DietaGuilherme.resolver()
     DietaGuilherme.mostrarResultados()
 
     #Exemplo 2
-    nayara = Pessoa(nome="Nayara", idade=26, altura=1.72, peso=56, sexo="Feminino", atividade="Leve")
+    nayara = Pessoa(nome="Ana Paula", idade=26, altura=1.72, peso=56, sexo="Feminino", atividade="Leve")
     alimentosNayara = FabricaAlimentos.gerar([ "Feijao carioca", "Maca", "Banana", "Pera", "Arroz branco"])
 
     DietaNayara = Dieta(pessoa=nayara, tolerancia=0.20, alimentos=alimentosNayara )
